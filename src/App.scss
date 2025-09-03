@@ -1,0 +1,130 @@
+
+@import './variables.scss';
+
+// Reset
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font-family-base;
+}
+
+body {
+  background: $background-body;
+  color: $text-color;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.App {
+  background: $card-background;
+  padding: $padding-xl;
+  border-radius: $border-radius-xl;
+  box-shadow: $box-shadow;
+  max-width: 480px;
+  width: 100%;
+  text-align: center;
+
+  h1 {
+    font-size: $font-size-heading;
+    margin-bottom: $margin-lg;
+    color: $heading-color;
+  }
+}
+
+// Input Section
+.input-box {
+  margin-bottom: $margin-lg;
+
+  .gen {
+    display: flex;
+    gap: $padding-base;
+    margin-bottom: $margin-base;
+
+    input {
+      flex: 1;
+      padding: $padding-base $padding-lg;
+      border: 1px solid $border-color;
+      border-radius: $border-radius-base;
+      outline: none;
+      font-size: $font-size-base;
+    }
+  }
+
+  .button {
+    background: $button-primary;
+    color: white;
+    padding: $btnpadding;
+    border: none;
+    border-radius: $border-radius-base;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+
+
+    &:hover {
+      background: $button-primary-hover;
+    }
+  }
+}
+
+// Extra Options
+.extra {
+  text-align: left;
+  margin-top: $margin-base;
+
+  h5 {
+    margin: 0.5rem 0 0.3rem;
+    font-size: $font-size-small;
+    font-weight: $font-weight-bold;
+  }
+
+  input[type="color"] {
+    width: 60px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+  }
+
+  input[type="range"] {
+    width: 100%;
+  }
+}
+
+// Output Section
+.output-box {
+  margin-top: $margin-xl;
+
+  img {
+    border: 5px solid $image-border;
+    border-radius: $border-radius-lg;
+    margin-bottom: $margin-base;
+    max-width: 100%;
+  }
+
+  button {
+    display: block;
+    margin: auto;
+    padding: $btnpadding;
+    background: $button-secondary;
+    color: white;
+    border: none;
+    border-radius: $border-radius-base;
+    cursor: pointer;
+    transition: background 0.2s ease-in-out;
+    font-size: $font-size-base;
+    font-weight: $font-weight-bold;
+
+    &:hover {
+      background: $button-secondary-hover;
+    }
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
